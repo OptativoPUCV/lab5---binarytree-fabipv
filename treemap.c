@@ -97,10 +97,8 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
       }
       else
       {
-        if(resultado > 0)
-        {
-          current = current->right;
-        }
+        current = current->right;
+
       }
     }
   }
