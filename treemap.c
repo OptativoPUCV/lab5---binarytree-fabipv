@@ -57,6 +57,13 @@ void insertTreeMap(TreeMap * tree, void* key, void * value)
   TreeNode* actual = tree->root;
   TreeNode* newNode = createTreeNode(key, value);
 
+  if(actual == NULL)
+  {
+    tree->root = actual;
+    tree->current = actual;
+  }
+
+
   while(actual != NULL)
   {
     if(is_equal(tree, actual->pair->key,key))
