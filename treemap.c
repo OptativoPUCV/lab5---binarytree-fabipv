@@ -232,7 +232,18 @@ Pair * upperBound(TreeMap * tree, void* key)
   {
     return NULL;
   }
-  return NULL;
+
+  TreeNode *aux;
+  TreeNode *keyMayor;
+
+  if(searchTreeMap(tree, key) != NULL)
+  {
+    return searchTreeMap(tree,key);
+  }
+
+    
+
+
 }
 
 Pair * firstTreeMap(TreeMap * tree) 
