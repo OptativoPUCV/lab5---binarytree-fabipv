@@ -256,6 +256,21 @@ Pair * nextTreeMap(TreeMap * tree)
     TreeNode *minimo = minimum(tree->current);
     tree->current = minimo;
     return tree->current->pair;
+  }
+  else
+  {
+    TreeNode *actual = tree->current;
+    TreeNode *padre = tree->current->parent;
+
+    while(padre != NULL && actual == padre->right)
+    {
+      actual = padre;
+      padre = padre->parent;
+    }
+    
+    tree->current = padre;
+    return tree->current->pair;
+
     
   }
   
