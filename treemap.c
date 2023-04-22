@@ -233,15 +233,23 @@ Pair * upperBound(TreeMap * tree, void* key)
     return NULL;
   }
 
-  //TreeNode *aux;
-  //TreeNode *keyMayor;
+  TreeNode *aux;
+  TreeNode *keyMayor;
 
+  //Caso que existe la key en el arbol
   if(searchTreeMap(tree, key) != NULL)
   {
     return searchTreeMap(tree,key);
   }
 
-    
+  //Caso que no exista la key en el arbol
+  aux = tree->root;
+
+  while(aux != NULL)
+  {
+      
+  }
+  
 
   return NULL;
 }
