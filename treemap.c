@@ -232,15 +232,13 @@ Pair * upperBound(TreeMap * tree, void* key) {
 
 Pair * firstTreeMap(TreeMap * tree) 
 {
-  if(tree == NULL)
+  if(tree == NULL || tree->root == NULL)
   {
     return NULL;
   }
 
-  tree->current = tree->root;
-  TreeNode *minimo = minimum(tree->current->pair->key);
-  tree->current->pair->key = minimo->pair->key;
-  tree->current->pair->value = minimo->pair->value;
+  TreeNode *minimo = minimum(tree->root);
+  tree->current= minimo;
   return tree->current->pair;
 }
 
