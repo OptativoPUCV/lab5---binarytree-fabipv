@@ -276,10 +276,18 @@ Pair * nextTreeMap(TreeMap * tree)
       actual = padre;
       padre = padre->parent;
     }
-
     
     tree->current = padre;
-    return tree->current->pair;
+    
+    if(tree->current != NULL)
+    {
+      return tree->current->pair;
+    }
+    else
+    {
+      return NULL;
+    }
+    
   }
   
 
