@@ -237,7 +237,8 @@ Pair * firstTreeMap(TreeMap * tree)
     return NULL;
   }
 
-  TreeNode *minimo = minimum(tree->root);
+  tree->current = tree->root;
+  TreeNode *minimo = minimum(tree->current);
   tree->current= minimo;
   return tree->current->pair;
 }
