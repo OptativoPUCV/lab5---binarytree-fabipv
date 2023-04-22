@@ -233,8 +233,8 @@ Pair * upperBound(TreeMap * tree, void* key)
     return NULL;
   }
 
-  TreeNode *aux;
-  TreeNode *keyMayor;
+  //TreeNode *aux;
+  //TreeNode *keyMayor;
 
   if(searchTreeMap(tree, key) != NULL)
   {
