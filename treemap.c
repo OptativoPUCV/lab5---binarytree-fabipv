@@ -250,10 +250,10 @@ Pair * nextTreeMap(TreeMap * tree)
     return NULL;
   }
 
-  if()
+  /*if(tree->current->r)
   {
     
-  }
+  }*/
 
   
 
