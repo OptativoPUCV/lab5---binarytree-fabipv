@@ -253,8 +253,9 @@ Pair * upperBound(TreeMap * tree, void* key)
     }
     else if (tree->lower_than(key,aux->pair->key)==1)
     {
-      keyMayor = aux;
+      
       aux = aux->left;
+      keyMayor = aux;
      
     }
   }
