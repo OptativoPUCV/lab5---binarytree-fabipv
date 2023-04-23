@@ -331,3 +331,14 @@ treemap.c:250:7: error: ‘keyMayor’ may be used uninitialized [-Werror=maybe-
 cc1: all warnings being treated as errors
 Compilation failed
 9d49363
+Sun 23 Apr 2023 12:26:29 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:250:7: error: ‘keyMayor’ may be used uninitialized [-Werror=maybe-uninitialized]
+  250 |     if((keyMayor == NULL ||tree->lower_than(aux->pair->key, keyMayor->pair->key)) && tree->lower_than(key, aux->pair->key))
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+0eef78b
