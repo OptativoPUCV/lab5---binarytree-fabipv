@@ -265,11 +265,10 @@ Pair * upperBound(TreeMap * tree, void* key)
     {
       return NULL;
     }
-
+  }
     tree->current = keyMayor;
     return keyMayor->pair;
-
-  }  
+  
 }
 
 Pair * firstTreeMap(TreeMap * tree) 
