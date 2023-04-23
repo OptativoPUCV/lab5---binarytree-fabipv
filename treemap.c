@@ -247,7 +247,12 @@ Pair * upperBound(TreeMap * tree, void* key)
 
   while(aux != NULL)
   {
-      
+    if(keyMayor == NULL ||tree->lower_than(aux->pair->key, keyMayor->pair->key) && tree->lower_than(key, aux->pair->key))
+    {
+      keyMayor = aux;
+    }
+
+    if()
   }
   
 
