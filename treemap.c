@@ -261,7 +261,14 @@ Pair * upperBound(TreeMap * tree, void* key)
       aux = aux->left;
     }
 
-    
+    if(keyMayor == NULL)
+    {
+      return NULL;
+    }
+
+    tree->current = keyMayor;
+    return keyMayor->pair;
+
   }  
   
 
