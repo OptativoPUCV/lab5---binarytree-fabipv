@@ -270,9 +270,6 @@ Pair * upperBound(TreeMap * tree, void* key)
     return keyMayor->pair;
 
   }  
-  
-
-  return NULL;
 }
 
 Pair * firstTreeMap(TreeMap * tree) 
